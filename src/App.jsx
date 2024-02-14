@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <English />
-      <German />
-      <Cuban />
+      {/* <German /> */}
+      {/* <Cuban /> */}
     </>
   );
 }
