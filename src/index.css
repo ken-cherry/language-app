@@ -70,6 +70,9 @@ button:focus-visible {
 /* 
 STYLES
 */
+.section-container {
+  margin: 1rem auto;
+}
 .image {
   height: 10rem;
   width: 15rem;

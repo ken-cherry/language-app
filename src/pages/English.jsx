@@ -3,15 +3,13 @@ import React from "react";
 const English = () => {
   return (
     <>
-      <div className="flag-container">
+      <div className="section-container">
         <div className="flag-center">
           <img
             src="../src/assets/images/americanFlag.jpg"
             alt="american flag"
           />
         </div>
-      </div>
-      <div className="image-container">
         <div className="image-center">
           <h2>Table</h2>
           <img
@@ -20,6 +18,8 @@ const English = () => {
             className="image"
           />
         </div>
+        <button className="btn">Next</button>
+        <button className="btn">Prev</button>
       </div>
     </>
   );
