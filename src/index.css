@@ -66,14 +66,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* 
+NAVBAR
+*/
 
 /* 
-STYLES
+LANDING PAGE
 */
 .section-container {
   margin: 1rem auto;
 }
 .image {
-  height: 10rem;
-  width: 15rem;
+  height: 5rem;
+  width: 10rem;
 }

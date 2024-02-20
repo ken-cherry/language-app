@@ -1,14 +1,38 @@
 import "./App.css";
-import { English, German, Cuban } from "./pages";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Cuban, English, German, HomeLayout, Landing } from "./pages";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeLayout />,
+    children: [
+      {
+        index: true,
+        element: <Landing />,
+      },
+      {
+        path: "english",
+        element: <English />,
+      },
+      {
+        path: "german",
+        element: <German />,
+      },
+      {
+        path: "spanish",
+        element: <Cuban />,
+      },
+    ],
+  },
+]);
+
+const App = () => {
   return (
     <>
-      <English />
-      {/* <German /> */}
-      {/* <Cuban /> */}
+      <RouterProvider router={router} />
     </>
   );
-}
+};
 
 export default App;
