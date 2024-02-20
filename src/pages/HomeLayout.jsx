@@ -7,7 +7,6 @@ const HomeLayout = () => {
     <div>
       <Navbar />
       <Outlet />
-      <footer>Footer</footer>
     </div>
   );
 };
