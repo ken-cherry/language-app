@@ -42,6 +42,7 @@ body {
   place-items: center;
   /* min-width: 320px; */
   /* min-height: 100vh; */
+  background-color: var(--green-300);
 }
 
 h1 {
@@ -98,12 +99,19 @@ NAVBAR
   width: 5rem;
   margin: 1rem 0;
 }
-
+/* 
+LANDING PAGE
+*/
+.landing-page {
+  height: 78vh;
+  display: grid;
+  place-items: center;
+}
 /* 
 English German Cuban Pages
 */
 .section-container {
-  height: 80vh;
+  height: 78vh;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
@@ -121,9 +129,26 @@ h2 {
   text-align: center;
   margin: 0;
 }
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.button-container .btn {
+  background-color: var(--green-50);
+}
 /* 
 FOOTER
 */
 .footer-btn {
   display: grid;
+  place-content: center;
+}
+.home-btn {
+  background-color: var(--green-950);
+
+  width: 12rem;
+}
+.home-btn a {
+  color: white;
 }
