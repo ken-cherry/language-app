@@ -5,10 +5,13 @@ const Cuban = () => {
     <>
       <div className="section-container">
         <div className="flag-center">
-          <img src="../src/assets/images/cubanFlag.jpg" alt="cuban flag" />
+          <img
+            src="../src/assets/images/cubanFlag.jpg"
+            alt="cuban flag"
+            className="flag-page"
+          />
         </div>
-      </div>
-      <div className="image-container">
+
         <div className="image-center">
           <h2>Mesa</h2>
           <img
@@ -17,8 +20,10 @@ const Cuban = () => {
             className="image"
           />
         </div>
-        <button className="btn">Next</button>
-        <button className="btn">Prev</button>
+        <div className="button-container">
+          <button className="btn">Next</button>
+          <button className="btn">Prev</button>
+        </div>
       </div>
     </>
   );

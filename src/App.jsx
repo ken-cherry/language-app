@@ -1,4 +1,3 @@
-import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Cuban, English, German, HomeLayout, Landing } from "./pages";
 

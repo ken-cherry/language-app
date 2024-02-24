@@ -4,13 +4,9 @@ import { languages } from "../data";
 const Landing = () => {
   return (
     <>
-      {/* <header>Select Language</header>
-      <div className="language">
-        {languages.map((item) => {
-          const { id, language, image, alt } = item;
-          return <img src={image} alt={alt} className="image" key={id} />;
-        })}
-      </div> */}
+      <div className="landing-page">
+        <h2>Select the language you want to practice.</h2>
+      </div>
     </>
   );
 };

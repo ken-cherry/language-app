@@ -8,6 +8,7 @@ const English = () => {
           <img
             src="../src/assets/images/americanFlag.jpg"
             alt="american flag"
+            className="flag-page"
           />
         </div>
         <div className="image-center">
@@ -18,8 +19,10 @@ const English = () => {
             className="image"
           />
         </div>
-        <button className="btn">Next</button>
-        <button className="btn">Prev</button>
+        <div className="button-container">
+          <button className="btn">Next</button>
+          <button className="btn">Prev</button>
+        </div>
       </div>
     </>
   );
