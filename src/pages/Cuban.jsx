@@ -11,7 +11,6 @@ const Cuban = () => {
             className="flag-page"
           />
         </div>
-
         <div className="image-center">
           <h2>Mesa</h2>
           <img

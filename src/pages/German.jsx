@@ -11,7 +11,6 @@ const German = () => {
             className="flag-page"
           />
         </div>
-
         <div className="image-center">
           <h2>Tisch</h2>
           <img
