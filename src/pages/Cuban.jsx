@@ -16,8 +16,8 @@ const Cuban = () => {
           <img src="../images/table.jpg" alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn">Next</button>
           <button className="btn">Prev</button>
+          <button className="btn">Next</button>
         </div>
       </div>
     </>
