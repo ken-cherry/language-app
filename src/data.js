@@ -29,4 +29,10 @@ export const words = [
     german: "stuhl",
     spanish: "silla",
   },
+  {
+    image: "../images/plate.jpg",
+    english: "plate",
+    german: "platte",
+    spanish: "lamina",
+  },
 ];
