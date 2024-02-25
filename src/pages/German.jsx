@@ -6,18 +6,14 @@ const German = () => {
       <div className="section-container">
         <div className="flag-center">
           <img
-            src="../src/assets/images/germanFlag.jpg"
+            src="../images/germanFlag.jpg"
             alt="german flag"
             className="flag-page"
           />
         </div>
         <div className="image-center">
           <h2>Tisch</h2>
-          <img
-            src="../src/assets/images/table.jpg"
-            alt="table"
-            className="image"
-          />
+          <img src="../images/table.jpg" alt="table" className="image" />
         </div>
         <div className="button-container">
           <button className="btn">Next</button>
