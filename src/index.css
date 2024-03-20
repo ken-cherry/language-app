@@ -84,6 +84,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.home-layout {
+  height: 100vh;
+}
 /* 
 NAVBAR
 */
@@ -154,7 +157,6 @@ FOOTER
 }
 .home-btn {
   background-color: var(--green-950);
-
   width: 12rem;
 }
 .home-btn a {
