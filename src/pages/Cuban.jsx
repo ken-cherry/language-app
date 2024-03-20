@@ -5,7 +5,7 @@ import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 const Cuban = () => {
   const [index, setIndex] = useState(0);
 
-  const { image, cuban } = words[index];
+  const { image, spanish } = words[index];
 
   const checkNumber = (number) => {
     if (number > words.length - 1) {
@@ -41,7 +41,7 @@ const Cuban = () => {
           />
         </div>
         <div className="image-center">
-          <h2>{cuban}</h2>
+          <h2>{spanish}</h2>
           <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">

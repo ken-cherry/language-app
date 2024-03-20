@@ -24,7 +24,7 @@ export const words = [
     spanish: "Mesa",
   },
   {
-    image: "../images/chair.jpg",
+    image: "../images/chair2.jpg",
     english: "Chair",
     german: "Stuhl",
     spanish: "Silla",

@@ -25,6 +25,9 @@
   --green-800: #166534;
   --green-900: #14532d;
   --green-950: #052e16;
+
+  /* Other Variables */
+  --borderRadius: 0.25rem;
 }
 
 a {
@@ -123,6 +126,7 @@ English German Cuban Pages
 .image {
   height: 10rem;
   width: 15rem;
+  border-radius: var(--borderRadius);
   /* margin: 1rem 0; */
 }
 h2 {
