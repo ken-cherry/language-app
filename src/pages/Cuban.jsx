@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { words } from "../data";
+import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 
 const Cuban = () => {
+  const [index, setIndex] = useState(0);
+
+  const { image, cuban } = words[index];
+
+  const checkNumber = (number) => {
+    if (number > words.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return words.length - 1;
+    }
+    return number;
+  };
+
+  const next = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+  };
+
+  const prev = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkNumber(newIndex);
+    });
+  };
   return (
     <>
       <div className="section-container">
@@ -12,12 +41,12 @@ const Cuban = () => {
           />
         </div>
         <div className="image-center">
-          <h2>Mesa</h2>
-          <img src="../images/table.jpg" alt="table" className="image" />
+          <h2>{cuban}</h2>
+          <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn">Prev</button>
-          <button className="btn">Next</button>
+          <FaChevronCircleLeft onClick={prev} className="buttons-select" />
+          <FaChevronCircleRight onClick={next} className="buttons-select" />
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { words } from "../data";
+import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 
 const German = () => {
   const [index, setIndex] = useState(0);
@@ -46,12 +47,8 @@ const German = () => {
           <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn" onClick={prev}>
-            Prev
-          </button>
-          <button className="btn" onClick={next}>
-            Next
-          </button>
+          <FaChevronCircleLeft onClick={prev} className="buttons-select" />
+          <FaChevronCircleRight onClick={next} className="buttons-select" />
         </div>
       </div>
     </>
