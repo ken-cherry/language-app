@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { words } from "../data";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
+import { nanoid } from "nanoid";
 
 const Cuban = () => {
   const [index, setIndex] = useState(0);
@@ -40,7 +41,7 @@ const Cuban = () => {
             className="flag-page"
           />
         </div>
-        <div className="image-center">
+        <div className="image-center" key={nanoid()}>
           <h2>{spanish}</h2>
           <img src={image} alt="table" className="image" />
         </div>

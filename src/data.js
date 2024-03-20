@@ -1,15 +1,18 @@
 export const languages = [
   {
+    id: 1,
     language: "english",
     flag: "../images/americanFlag.jpg",
     alt: "american flag",
   },
   {
+    id: 2,
     language: "german",
     flag: "../images/germanFlag.jpg",
     alt: "german flag",
   },
   {
+    id: 3,
     language: "spanish",
     flag: "../images/cubanFlag.jpg",
     alt: "spanish flag",

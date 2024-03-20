@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { words } from "../data";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
+import { nanoid } from "nanoid";
 
 const German = () => {
   const [index, setIndex] = useState(0);
@@ -42,7 +43,7 @@ const German = () => {
             className="flag-page"
           />
         </div>
-        <div className="image-center">
+        <div className="image-center" key={nanoid()}>
           <h2>{german}</h2>
           <img src={image} alt="table" className="image" />
         </div>
