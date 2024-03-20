@@ -5,6 +5,7 @@
 - Vite
 - React Router DOM Libraries
 - nanoid
+- React Icons
 
 # Launch project in your preferred IDE
 

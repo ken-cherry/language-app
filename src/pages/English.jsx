@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { words } from "../data";
-import { useSearchParams } from "react-router-dom";
+import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 
 const English = () => {
   const [index, setIndex] = useState(0);
@@ -22,7 +22,6 @@ const English = () => {
       let newIndex = index + 1;
       return checkNumber(newIndex);
     });
-    console.log("next");
   };
 
   const prev = () => {
@@ -30,7 +29,6 @@ const English = () => {
       let newIndex = index - 1;
       return checkNumber(newIndex);
     });
-    console.log("prev");
   };
   return (
     <>
@@ -47,12 +45,8 @@ const English = () => {
           <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn" onClick={prev}>
-            Prev
-          </button>
-          <button className="btn" onClick={next}>
-            Next
-          </button>
+          <FaChevronCircleLeft onClick={prev} className="buttons-select" />
+          <FaChevronCircleRight onClick={next} className="buttons-select" />
         </div>
       </div>
     </>

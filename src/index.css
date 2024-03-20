@@ -132,10 +132,14 @@ h2 {
 .button-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 5rem;
 }
-.button-container .btn {
-  background-color: var(--green-50);
+
+.buttons-select {
+  font-size: 3rem;
+}
+.buttons-select:hover {
+  color: var(--green-50);
 }
 /* 
 FOOTER

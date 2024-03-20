@@ -1,6 +1,36 @@
 import React from "react";
+import { useState } from "react";
+import { words } from "../data";
 
 const German = () => {
+  const [index, setIndex] = useState(0);
+  const { image, german } = words[index];
+
+  const checkNumber = (number) => {
+    if (number > words.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return words.length - 1;
+    }
+    return number;
+  };
+
+  const next = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+    console.log("next");
+  };
+
+  const prev = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkNumber(newIndex);
+    });
+    console.log("prev");
+  };
   return (
     <>
       <div className="section-container">
@@ -12,12 +42,16 @@ const German = () => {
           />
         </div>
         <div className="image-center">
-          <h2>Tisch</h2>
-          <img src="../images/table.jpg" alt="table" className="image" />
+          <h2>{german}</h2>
+          <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn">Prev</button>
-          <button className="btn">Next</button>
+          <button className="btn" onClick={prev}>
+            Prev
+          </button>
+          <button className="btn" onClick={next}>
+            Next
+          </button>
         </div>
       </div>
     </>
