@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { words } from "../data";
+import { useSearchParams } from "react-router-dom";
 
 const English = () => {
+  const [index, setIndex] = useState(0);
+
+  const { image, english } = words[index];
+
+  const checkNumber = (number) => {
+    if (number > words.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return words.length - 1;
+    }
+    return number;
+  };
+
+  const next = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+    console.log("next");
+  };
+
+  const prev = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkNumber(newIndex);
+    });
+    console.log("prev");
+  };
   return (
     <>
       <div className="section-container">
@@ -12,12 +43,16 @@ const English = () => {
           />
         </div>
         <div className="image-center">
-          <h2>Table</h2>
-          <img src="../images/table.jpg" alt="table" className="image" />
+          <h2>{english}</h2>
+          <img src={image} alt="table" className="image" />
         </div>
         <div className="button-container">
-          <button className="btn">Prev</button>
-          <button className="btn">Next</button>
+          <button className="btn" onClick={prev}>
+            Prev
+          </button>
+          <button className="btn" onClick={next}>
+            Next
+          </button>
         </div>
       </div>
     </>

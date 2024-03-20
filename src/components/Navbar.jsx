@@ -13,9 +13,11 @@ const Navbar = () => {
               const { language, flag, alt } = item;
               return (
                 <>
-                  <Link to={`/${language}`}>
-                    <img src={flag} alt={alt} className="flag" key={nanoid()} />
-                  </Link>
+                  <nav key={nanoid()}>
+                    <Link to={`/${language}`}>
+                      <img src={flag} alt={alt} className="flag" />
+                    </Link>
+                  </nav>
                 </>
               );
             })}

@@ -19,20 +19,20 @@ export const languages = [
 export const words = [
   {
     image: "../images/table.jpg",
-    english: "table",
-    german: "tisch",
-    spanish: "mesa",
+    english: "Table",
+    german: "Tisch",
+    spanish: "Mesa",
   },
   {
     image: "../images/chair.jpg",
-    english: "chair",
-    german: "stuhl",
-    spanish: "silla",
+    english: "Chair",
+    german: "Stuhl",
+    spanish: "Silla",
   },
   {
     image: "../images/plate.jpg",
-    english: "plate",
-    german: "platte",
-    spanish: "lamina",
+    english: "Plate",
+    german: "Platte",
+    spanish: "Lamina",
   },
 ];
