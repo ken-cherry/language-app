@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer-btn">
-      <button className="btn home-btn">
-        <Link to="/">Home</Link>
-      </button>
+      <Link to="/">
+        <button className="btn home-btn">Home</button>
+      </Link>
     </div>
   );
 };

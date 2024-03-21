@@ -165,6 +165,6 @@ FOOTER
   background-color: var(--green-950);
   width: 12rem;
 }
-.home-btn a {
+.home-btn {
   color: white;
 }
