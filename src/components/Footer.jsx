@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-btn">
       <Link to="/">
-        <button className="btn home-btn">Home</button>
+        <button className="btn home-btn">Home </button>
       </Link>
     </div>
   );
