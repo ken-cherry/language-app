@@ -113,6 +113,11 @@ LANDING PAGE
   display: grid;
   place-items: center;
 }
+.charlie {
+  height: 15rem;
+  width: 20rem;
+  border-radius: var(--borderRadius);
+}
 /* 
 English German Cuban Pages
 */

@@ -23,7 +23,6 @@ const German = () => {
       let newIndex = index + 1;
       return checkNumber(newIndex);
     });
-    console.log("next");
   };
 
   const prev = () => {
@@ -31,7 +30,6 @@ const German = () => {
       let newIndex = index - 1;
       return checkNumber(newIndex);
     });
-    console.log("prev");
   };
   return (
     <>

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { words } from "../data";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 import { nanoid } from "nanoid";
-import { NextPrev } from "../components";
 
-const English = () => {
+const Language = () => {
   const [index, setIndex] = useState(0);
 
   const { image, english } = words[index];
@@ -55,4 +54,4 @@ const English = () => {
   );
 };
 
-export default English;
+export default Language;

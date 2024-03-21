@@ -5,7 +5,11 @@ const Landing = () => {
   return (
     <>
       <div className="landing-page">
-        <h2>Select the language you want to practice.</h2>
+        <img
+          src="../public\images\charlieBoat.jpg"
+          alt="Image of Charlie"
+          className="charlie"
+        />
       </div>
     </>
   );
