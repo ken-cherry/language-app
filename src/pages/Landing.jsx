@@ -6,7 +6,7 @@ const Landing = () => {
     <>
       <div className="landing-page">
         <img
-          src="../public\images\charlieBoat.jpg"
+          src="../images/charlieBoat.jpg"
           alt="Image of Charlie"
           className="charlie"
         />
